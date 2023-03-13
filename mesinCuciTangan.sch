@@ -5971,7 +5971,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR1"/>
 <part name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR2"/>
 <part name="U$2" library="DFPlayer_v1" deviceset="DFPLAYER" device=""/>
-<part name="MOD1" library="dl9sec_public" deviceset="PAM8403MOD" device="-F2"/>
+<part name="PAM8403" library="dl9sec_public" deviceset="PAM8403MOD" device="-F2"/>
 <part name="U$3" library="mesinCuciCustomLib" deviceset="3CHANNELRELAY5V" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -6069,7 +6069,7 @@ PAM8203</text>
 <attribute name="NAME" x="142.24" y="118.618" size="1.524" layer="95" rot="MR0"/>
 </instance>
 <instance part="U$2" gate="G$1" x="66.04" y="71.12" smashed="yes"/>
-<instance part="MOD1" gate="G$1" x="55.88" y="25.4" smashed="yes">
+<instance part="PAM8403" gate="G$1" x="55.88" y="25.4" smashed="yes">
 <attribute name="NAME" x="55.88" y="44.45" size="1.27" layer="95"/>
 <attribute name="VALUE" x="69.85" y="44.45" size="1.27" layer="96"/>
 </instance>
@@ -6251,10 +6251,10 @@ PAM8203</text>
 <wire x1="48.26" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MOD1" gate="G$1" pin="GND@2"/>
+<pinref part="PAM8403" gate="G$1" pin="GND@2"/>
 <wire x1="68.58" y1="22.86" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="GND@1"/>
+<pinref part="PAM8403" gate="G$1" pin="GND@1"/>
 <wire x1="66.04" y1="17.78" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="66.04" y1="15.24" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
@@ -6316,7 +6316,7 @@ PAM8203</text>
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="MOD1" gate="G$1" pin="+5V"/>
+<pinref part="PAM8403" gate="G$1" pin="+5V"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="67.31" y1="45.72" x2="67.31" y2="50.546" width="0.1524" layer="91"/>
 </segment>
@@ -6365,21 +6365,21 @@ PAM8203</text>
 <net name="N$1" class="0">
 <segment>
 <pinref part="SPK_R" gate="-1" pin="KL"/>
-<pinref part="MOD1" gate="G$1" pin="+OR"/>
+<pinref part="PAM8403" gate="G$1" pin="+OR"/>
 <wire x1="96.52" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="SPK_R" gate="-2" pin="KL"/>
-<pinref part="MOD1" gate="G$1" pin="-OR"/>
+<pinref part="PAM8403" gate="G$1" pin="-OR"/>
 <wire x1="96.52" y1="25.4" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="MOD1" gate="G$1" pin="-OL"/>
+<pinref part="PAM8403" gate="G$1" pin="-OL"/>
 <pinref part="SPK_L" gate="-2" pin="KL"/>
 <wire x1="81.28" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -6387,7 +6387,7 @@ PAM8203</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="SPK_L" gate="-1" pin="KL"/>
-<pinref part="MOD1" gate="G$1" pin="+OL"/>
+<pinref part="PAM8403" gate="G$1" pin="+OL"/>
 <wire x1="96.52" y1="43.18" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 </segment>
@@ -6425,7 +6425,7 @@ PAM8203</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="MOD1" gate="G$1" pin="IL"/>
+<pinref part="PAM8403" gate="G$1" pin="IL"/>
 <wire x1="53.34" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="DAC_L"/>
@@ -6437,7 +6437,7 @@ PAM8203</text>
 <pinref part="U$2" gate="G$1" pin="DAC_R"/>
 <wire x1="48.26" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="73.66" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="MOD1" gate="G$1" pin="IR"/>
+<pinref part="PAM8403" gate="G$1" pin="IR"/>
 <wire x1="33.02" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
