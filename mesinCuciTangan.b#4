@@ -1942,8 +1942,6 @@ design rules under a new name.</description>
 <contactref element="MOD1" pad="5"/>
 <contactref element="MOD1" pad="2"/>
 <contactref element="LM2596" pad="OUT-"/>
-<contactref element="X3" pad="3"/>
-<contactref element="X1" pad="3"/>
 <contactref element="U$3" pad="3"/>
 <wire x1="73.49" y1="50.64" x2="71.61" y2="52.52" width="1.27" layer="16"/>
 <wire x1="71.61" y1="52.52" x2="71.61" y2="61" width="1.27" layer="16"/>
@@ -1985,10 +1983,12 @@ design rules under a new name.</description>
 <wire x1="157.5" y1="71.5" x2="157.5" y2="79.5" width="1.27" layer="16"/>
 <wire x1="147.68" y1="61.68" x2="157.5" y2="71.5" width="1.27" layer="16"/>
 <contactref element="X4" pad="2"/>
-<wire x1="136.684" y1="93.031" x2="144.669" y2="93.003" width="0" layer="19" extent="1-1"/>
-<wire x1="131.225" y1="93.031" x2="136.684" y2="93.031" width="0" layer="19" extent="1-1"/>
-<wire x1="142.6" y1="74.95" x2="144.669" y2="93.003" width="0" layer="19" extent="1-1"/>
-<wire x1="157.5" y1="79.5" x2="142.6" y2="74.95" width="0" layer="19" extent="16-16"/>
+<contactref element="X3" pad="2"/>
+<contactref element="X1" pad="2"/>
+<wire x1="139.224" y1="93.031" x2="147.209" y2="93.003" width="0" layer="19" extent="1-1"/>
+<wire x1="131.225" y1="93.031" x2="139.224" y2="93.031" width="0" layer="19" extent="1-1"/>
+<wire x1="157.5" y1="79.5" x2="147.209" y2="93.003" width="0" layer="19" extent="16-16"/>
+<wire x1="142.6" y1="74.95" x2="157.5" y2="79.5" width="0" layer="19" extent="16-16"/>
 <wire x1="109.57" y1="94.38" x2="131.225" y2="93.031" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
@@ -2143,14 +2143,14 @@ design rules under a new name.</description>
 <wire x1="99.791" y1="86.76" x2="109.57" y2="86.76" width="1.27" layer="16"/>
 </signal>
 <signal name="D2">
-<contactref element="X1" pad="2"/>
 <contactref element="ARDUINO_NANO1" pad="20"/>
-<wire x1="147.209" y1="93.003" x2="140.06" y2="74.95" width="0" layer="19" extent="1-1"/>
+<contactref element="X1" pad="3"/>
+<wire x1="140.06" y1="74.95" x2="144.669" y2="93.003" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D3">
-<contactref element="X3" pad="2"/>
 <contactref element="ARDUINO_NANO1" pad="21"/>
-<wire x1="137.52" y1="74.95" x2="139.224" y2="93.031" width="0" layer="19" extent="1-1"/>
+<contactref element="X3" pad="3"/>
+<wire x1="137.52" y1="74.95" x2="136.684" y2="93.031" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4">
 <contactref element="ARDUINO_NANO1" pad="22"/>

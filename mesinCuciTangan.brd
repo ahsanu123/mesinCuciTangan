@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1845,11 +1845,11 @@ design rules under a new name.</description>
 <element name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" package="22-23-2031" package3d_urn="urn:adsk.eagle:package:8078634/1" value="PIR" x="142.209" y="82.003" smashed="yes" rot="R180">
 <attribute name="MF" value="MOLEX" x="124.429" y="134.073" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="22-23-2031" x="124.429" y="134.073" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="146.019" y="78.193" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="150.019" y="82.193" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="1462950" x="124.429" y="134.073" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="124.429" y="134.073" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="35" x="124.429" y="134.073" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="146.019" y="87.083" size="1.016" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="137.519" y="82.583" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="X2" library="con-wago-500" package="W237-102" package3d_urn="urn:adsk.eagle:package:10688/1" value="POWER" x="52.69" y="94.89" smashed="yes">
 <attribute name="MF" value="" x="52.69" y="94.89" size="1.778" layer="27" display="off"/>
@@ -1863,20 +1863,20 @@ design rules under a new name.</description>
 <element name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" package="22-23-2031" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR1" x="142.224" y="88.531" smashed="yes" rot="R180">
 <attribute name="MF" value="MOLEX" x="142.224" y="88.531" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="22-23-2031" x="142.224" y="88.531" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="146.034" y="84.721" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="149.034" y="88.721" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="1462950" x="142.224" y="88.531" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="142.224" y="88.531" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="35" x="142.224" y="88.531" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="146.034" y="93.611" size="1.016" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="137.034" y="89.111" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" package="22-23-2031" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR2" x="142.225" y="95.031" smashed="yes" rot="R180">
 <attribute name="MF" value="MOLEX" x="142.225" y="95.031" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="22-23-2031" x="142.225" y="95.031" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="146.035" y="91.221" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="149.035" y="95.721" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="1462950" x="142.225" y="95.031" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="142.225" y="95.031" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="35" x="142.225" y="95.031" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="146.035" y="100.111" size="1.016" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="137.035" y="95.611" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U$2" library="DFPlayer_v1" package="DFPLAYER" value="DFPLAYER" x="100.68" y="88.03" smashed="yes" rot="R180"/>
 <element name="MOD1" library="dl9sec_public" package="PAM8403MOD2" value="PAM8403MOD-F2" x="69.07" y="66.54" smashed="yes">

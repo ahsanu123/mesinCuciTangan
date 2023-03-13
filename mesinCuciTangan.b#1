@@ -1995,7 +1995,9 @@ design rules under a new name.</description>
 <wire x1="142.224" y1="82.018" x2="142.224" y2="79.826" width="1.27" layer="16"/>
 <wire x1="142.6" y1="74.95" x2="142.6" y2="79.45" width="1.27" layer="16"/>
 <wire x1="142.6" y1="79.45" x2="142.224" y2="79.826" width="1.27" layer="16"/>
-<wire x1="142.225" y1="95.031" x2="109.578" y2="94.388" width="0" layer="19" extent="16-16"/>
+<wire x1="109.57" y1="94.38" x2="127.38" y2="94.38" width="1.27" layer="16"/>
+<wire x1="131" y1="98" x2="142.225" y2="98" width="1.27" layer="16"/>
+<wire x1="127.38" y1="94.38" x2="131" y2="98" width="1.27" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="MOD1" pad="4"/>

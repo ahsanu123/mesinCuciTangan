@@ -2161,12 +2161,14 @@ design rules under a new name.</description>
 <signal name="D3">
 <contactref element="ARDUINO_NANO1" pad="21"/>
 <contactref element="X3" pad="3"/>
-<wire x1="137.52" y1="74.95" x2="139.684" y2="88.531" width="0" layer="19" extent="1-1"/>
+<wire x1="137.52" y1="74.95" x2="137.52" y2="86.367" width="1.27" layer="16"/>
+<wire x1="137.52" y1="86.367" x2="139.684" y2="88.531" width="1.27" layer="16"/>
 </signal>
 <signal name="D4">
 <contactref element="ARDUINO_NANO1" pad="22"/>
 <contactref element="X4" pad="3"/>
-<wire x1="134.98" y1="74.95" x2="139.685" y2="95.031" width="0" layer="19" extent="1-1"/>
+<wire x1="134.98" y1="74.95" x2="134.98" y2="90.326" width="1.27" layer="16"/>
+<wire x1="134.98" y1="90.326" x2="139.685" y2="95.031" width="1.27" layer="16"/>
 </signal>
 <signal name="A2">
 <contactref element="U$3" pad="6"/>
