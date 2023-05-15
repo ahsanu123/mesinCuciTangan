@@ -139,6 +139,22 @@
 <description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
+<package name="22-23-2041" urn="urn:adsk.eagle:footprint:8078261/1" library_version="5">
+<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 4 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232041_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="3.175" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 <package name="22-23-2031" urn="urn:adsk.eagle:footprint:8078260/1" library_version="5">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
@@ -156,6 +172,12 @@
 </package>
 </packages>
 <packages3d>
+<package3d name="22-23-2041" urn="urn:adsk.eagle:package:8078635/1" type="box" library_version="5">
+<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 4 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232041_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="22-23-2041"/>
+</packageinstances>
+</package3d>
 <package3d name="22-23-2031" urn="urn:adsk.eagle:package:8078634/1" type="box" library_version="5">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <packageinstances>
@@ -177,6 +199,37 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="22-23-2041" urn="urn:adsk.eagle:component:8078936/3" prefix="X" library_version="5">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2041">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2041" constant="no"/>
+<attribute name="OC_FARNELL" value="1462920" constant="no"/>
+<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+<attribute name="POPULARITY" value="21" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="22-23-2031" urn="urn:adsk.eagle:component:8078937/3" prefix="X" library_version="5">
 <description>.100" (2.54mm) Center Header - 3 Pin</description>
 <gates>
@@ -5968,8 +6021,8 @@ Grid 5.00 mm&lt;p&gt;
 <part name="LM2596" library="userlib" deviceset="CP8-ADJ" device="" value="LM2596"/>
 <part name="ARDUINO_NANO1" library="ArduinoNanoV30" deviceset="ARDUINO_NANO" device=""/>
 <part name="X2" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1" value="POWER"/>
-<part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR1"/>
-<part name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1" value="IR2"/>
+<part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1" value="IR1"/>
+<part name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1" value="IR2"/>
 <part name="U$2" library="DFPlayer_v1" deviceset="DFPLAYER" device=""/>
 <part name="PAM8403" library="dl9sec_public" deviceset="PAM8403MOD" device="-F2"/>
 <part name="U$3" library="mesinCuciCustomLib" deviceset="3CHANNELRELAY5V" device=""/>
@@ -5985,7 +6038,6 @@ Grid 5.00 mm&lt;p&gt;
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="SPK_L" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="SPK_R" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1K"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -6008,8 +6060,8 @@ Grid 5.00 mm&lt;p&gt;
 <text x="17.78" y="162.56" size="2.54" layer="97">dari Power
 Supply</text>
 <text x="119.38" y="157.48" size="2.54" layer="97">Sensor PIR</text>
-<text x="119.38" y="139.7" size="2.54" layer="97">Sensor IR1</text>
-<text x="119.38" y="121.92" size="2.54" layer="97">Sensor IR2</text>
+<text x="127" y="139.7" size="2.54" layer="97">Ping1</text>
+<text x="127" y="121.92" size="2.54" layer="97">Ping2</text>
 <wire x1="5.08" y1="93.98" x2="104.14" y2="93.98" width="0.508" layer="94"/>
 <wire x1="104.14" y1="93.98" x2="129.54" y2="93.98" width="0.508" layer="94"/>
 <wire x1="129.54" y1="93.98" x2="182.88" y2="93.98" width="0.508" layer="94"/>
@@ -6116,13 +6168,6 @@ PAM8203</text>
 <instance part="P+5" gate="1" x="46.99" y="88.646" smashed="yes">
 <attribute name="VALUE" x="44.45" y="83.566" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SPK_L" gate="-1" x="101.6" y="43.18" smashed="yes" rot="MR0">
-<attribute name="NAME" x="101.6" y="44.069" size="1.778" layer="95" rot="MR180"/>
-</instance>
-<instance part="SPK_L" gate="-2" x="101.6" y="38.1" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="104.14" y="34.417" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="101.6" y="38.989" size="1.778" layer="95" rot="MR180"/>
-</instance>
 <instance part="SPK_R" gate="-1" x="101.6" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="101.6" y="31.369" size="1.778" layer="95" rot="MR180"/>
 </instance>
@@ -6174,6 +6219,12 @@ PAM8203</text>
 </instance>
 <instance part="GND9" gate="1" x="152.4" y="157.48" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="154.94" y="160.02" size="1.778" layer="96" rot="MR270"/>
+</instance>
+<instance part="X3" gate="-4" x="144.78" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="135.382" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X4" gate="-4" x="144.78" y="116.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="117.602" size="1.524" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -6377,21 +6428,6 @@ PAM8203</text>
 <wire x1="96.52" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="PAM8403" gate="G$1" pin="-OL"/>
-<pinref part="SPK_L" gate="-2" pin="KL"/>
-<wire x1="81.28" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SPK_L" gate="-1" pin="KL"/>
-<pinref part="PAM8403" gate="G$1" pin="+OL"/>
-<wire x1="96.52" y1="43.18" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="D10" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TX"/>
@@ -6472,9 +6508,9 @@ PAM8203</text>
 <label x="170.18" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="160.02" y="119.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="X4" gate="-3" pin="S"/>
+<wire x1="147.32" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="160.02" y="134.62" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="X3" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -6511,6 +6547,30 @@ PAM8203</text>
 <wire x1="215.9" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <label x="220.98" y="50.8" size="1.27" layer="95" xref="yes"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="ADC0/A0"/>
+</segment>
+</net>
+<net name="D5" class="0">
+<segment>
+<wire x1="170.18" y1="60.96" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+<label x="170.18" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D5/T1"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<label x="160.02" y="119.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="X4" gate="-3" pin="S"/>
+</segment>
+</net>
+<net name="D6" class="0">
+<segment>
+<wire x1="175.26" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
+<label x="170.18" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D6/AIN0"/>
+</segment>
+<segment>
+<wire x1="147.32" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
+<label x="160.02" y="116.84" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="X4" gate="-4" pin="S"/>
 </segment>
 </net>
 </nets>
